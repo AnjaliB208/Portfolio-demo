@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jane Doe</title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class = "container">
+        <nav id="navbar">
+            <span id="profile">
+                <div class="item" id="name">
+                    Anjali Biju
+                </div>
+                <div class="item" id="email">
+                    <img src="mail.png" alt="email icon" class="contact">
+                    anjlibiju@jeemail.com
+                </div>
+                <div class="item" id="phone">
+                    <img src="receiver.png" alt="email icon" class="contact">
+                    04843902
+                </div>
+            </span>
+            <ul>
+                <li class="item1"><a class="menu" href="#aboutme">About Me</a></li>
+                <li class="item2"><a class="menu" href="#skills">Skills</a></li>
+                <li class="item3"><a class="menu" href="#projects">Projects</a></li>
+                <li class="item4"><a class="menu" href="#recs">Recommendations</a></li>
+            </ul>
+        </nav>
+                
+        <div class="aboutsection">
+            <img src="manager.jpg" alt="Jane Doe" id="pic">
+            <span id="aboutme">
+                <div id="myheading">
+                    <h1>Hi, I'm Anjali Biju!</h1>
+                    <img src="waving-hand.png" alt="hello" id="hello">
+                </div>
+                <p>As a web developer, my objective is to create user-friendly and efficient websites that are
+                     visually appealing and easy to navigate. I utilize my skills in HTML, CSS, JavaScript, and PHP 
+                     to develop websites that meet all the requirements of the client. I am also comfortable working 
+                     with different content management systems (CMS) such as WordPress and Drupal. With my 
+                     Full Stack Developer course expertise, I am confident that I can apply these skills to a Web Developer 
+                     Role, and would like the opportunity to work with more complex codebases.</p>
+
+            </span>
+        </div>
+        <div class="skillclass" id="skills">
+            <h1>Skills</h1>
+            <ul id="skill3">
+                <li><img src="java.png" alt="Java logo" id="javalogo" class="logo"></li>
+                <li>Java</li>
+                <li>1.5 years experience</li>
+            </ul>
+
+            <ul id="skill1">
+                <li><img src="html.png" alt="HTML logo" id="htmllogo" class="logo"></li>
+                <li>HTML</li>
+                <li>2 years experience</li>
+            </ul>
+
+            <ul id="skill6">
+                <li><img src="css-3.png" alt="CSS logo" id="csslogo" class="logo"></li>
+                <li>CSS</li>
+                <li>2 years experience</li>
+            </ul>
+
+            <ul id="skill2">
+                <li><img src="java-script.png" alt="JavaScript logo" id="jslogo" class="logo"></li>
+                <li>JavaScript</li>
+                <li>1.5 years experience</li>
+            </ul>
+            
+            <ul id="skill4">
+                <li><img src="react.png" alt="React logo" id="reactlogo" class="logo"></li>
+                <li>React</li>
+                <li>2 years experience</li>
+            </ul>
+      
+            <ul id="skill5">
+                <li><img src="python_logo.png" alt="Python logo" id="pythonlogo" class="logo"></li>
+                <li>Python</li>
+                <li>1 years experience</li>
+            </ul>
+                   
+        </div>
+        <div class="projectsection" id="projects">
+            <h1>Projects</h1>
+            <div class="projectlist">
+                <h3>Inventory Management System</h3>
+                <ul>
+                    <li>
+                        Developed a secure web app integrated with creative UI and animation for  
+                        merchants who require tracking of their goods using HTML, CSS, JavaScript and PHP
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <div class="projectlist">
+                <h3>NaviBot</h3>
+                <ul>
+                    <li>
+                        Developed a robot using Arduino UNO and embedded C programming language controlled by both remote and app
+                        section of an eCommerce platform
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <div class="projectlist">
+                <h3>Restaurant booking website</h3>
+                <ul>
+                    <li>
+                        Created a styled multi-page website for a new player and integrated it with a shopping cart and advanced payment using stripe for 
+                        payment gateway 
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="recsection" id="recs">
+            <h1>Recommendations</h1>
+            <div id="rec">
+
+            <ul id="recList">
+                
+                <li>
+                    "The experience of working with Anjali has been fantastic. She is really knowledgeable and 
+                    constantly goes above and above to ensure everything is correct. I'd like to work with her 
+                    again on any tasks I have in the future that require her knowledge."
+                </li>
+                <li>
+                    "Anjali is a very quick student who quickly understands the fundamentals of web development. 
+                    She is a fantastic team player and has tremendous attitude. She asks the correct question and 
+                    has a keen mind. She acts independently. within a team and possesses leadership potential."
+                </li>
+                <li>
+                    "During the beginning stage of our venture, which required Web development, I had 
+                    collaborated with Anjali. She is a devoted resource with in-depth knowledge of the 
+                    continent. She is a valuable asset for any company!"
+                </li>
+            </ul>
+            </div>
+        </div>
+        <div class="recbox">
+            <h1 id="rec_heading">Leave a Recommendation</h1>
+            <form >
+                <input type="text" id="name" placeholder="Name (Optional)" >
+                <textarea type="text" id="msg" rows="5" cols="100%"placeholder="Message"></textarea>
+                <input type="submit" value="SUBMIT" id="submitbtn" onclick="addRec()">
+            </form>
+            
+        </div>
+        <button id="scrollUp" onclick="scrollUpwards()">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
